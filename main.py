@@ -7,7 +7,7 @@ def calculate(source,destination):
     return c.get_rate(source, destination)
 
 def convert():
-    #try:
+    try:
         #Checks if it's a number
         initial = float(quantity.get())
         # Displays the amount of money
@@ -16,9 +16,9 @@ def convert():
         label = tkinter.Label(window, text=f"{quantity.get()} {clicked.get()} is {result} {clicked_dest.get()}",
                               font=("Calibri", 12))
         label.pack(side=tkinter.BOTTOM)
-    #except:
-        #label = tkinter.Label(window, text="Not a valid number", font=("Calibri", 12))
-        #label.pack(side=tkinter.BOTTOM)
+    except:
+        label = tkinter.Label(window, text="Not a valid number", font=("Calibri", 12))
+        label.pack(side=tkinter.BOTTOM)
 
 
 def getQuantity():
