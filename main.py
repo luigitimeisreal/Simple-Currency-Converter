@@ -21,11 +21,11 @@ def convert():
         label.pack(side=tkinter.BOTTOM)
 
 
-def getQuantity():
+def getquantity():
     print(quantity.get())
     return int(quantity.get())
 
-def displayResult(event):
+def displayresult(event):
     print(clicked.get())
 
 currencies = ["EUR","USD", "IDR", "BGN", "GBP", "DKK", "CAD","JPY", "HUF", "RON", "MYR", "SEK", "SGD", "AUD","CHF"]
@@ -59,6 +59,6 @@ clicked_dest.set(currencies[0])
 destination = tkinter.OptionMenu(window,clicked_dest,*currencies)
 destination.pack(side=tkinter.RIGHT,padx=50)
 
-#Updates and loads the changes
+#Main loop (displays the program all the time)
 window.mainloop()
 
